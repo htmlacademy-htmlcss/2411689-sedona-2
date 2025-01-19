@@ -7,34 +7,39 @@
   <body>
 <header class="page-header">
 
-  <nav class="header-nagivation">
-    <a class="header-logo"><img class="logo" src="images/logo.svg" alt="sedona logo" width="139" height="70"></a>
+  <nav class="navigation-list">
+    <a class="header-logo" href="index.html"><img class="logo" src="images/logo.svg" alt="sedona logo" width="139" height="70"></a>
     <ul class="nav-list">
       <li class="nav-item"><a class="nav-link" href="index.html">Главная</a> </li>
       <li class="nav-item"><a class="nav-link" href="#">О Седоне</a></li>
       <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
     </ul>
-    <div class="additional-header-menu">
-    <form method="get" action="https://echo.htmlacademy.ru/courses">
-     <img class="search-icon" src="images/search.png" alt="magnifying glass">
-     <input type="hidden">
-    </form>
-    <a class="additional-header-link" href="#">
+    <div class="additional-nav">
+      <ul class="navigation-list navigation-user">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Поиск</a>
+    </li>
+     <li class="nav-item">
+    <a class="nav-link" href="#">
       <span class="visually-hidden">Избранное</span>
-      <img src="images/heart.png">
+      <img src="images/heart.png" alt="значок избранного">
       <span class="heart-counter">12</span>
     </a>
+  </li>
+  <li class="nav-item">
     <button class="button-header" type="button">Хочу сюда</button>
+  </li>
+</ul>
   </div>
   </nav>
 
 </header>
 
-<main class="main-content">
+<main class="main-index">
   <section class="first-page">
 <h1 class="visually-hidden">Седона</h1>
-<img class="main-image" src="images/index-background.jpg">
-<img class="main-image-overlay" src="images/welcome.svg">
+<img class="main-image" src="images/index-background.jpg" alt="пейзаж гор">
+<img class="main-image-overlay" src="images/welcome.svg" alt="надпись 'Добро пожаловать в очаровательную Седону'">
 <p class="first-page-heading">Седона — небольшой городок в Аризоне,
 заслуживающий большего!</p>
 <p class="first-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -43,7 +48,7 @@
 <section class="advantages">
   <h2 class="advantages-header">Настоящий городок</h2>
   <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-  <img class="advantages-image" src="images/true-town.jpg">
+  <img class="advantages-image" src="images/true-town.jpg" alt="фото городка с постройками и флагами">
   <h2 class="advantages-header">Небольшая площадь</h2>
   <p class="advantages-description">Все достопримечательности находятся очень близко</p>
   <h2 class="advantages-header">Красивая дорога</h2>
@@ -53,7 +58,7 @@
 </section>
 
 <section class="third-screen">
-  <img class="third-screen-image" src="images/devil-bridge.jpg">
+  <img class="third-screen-image" src="images/devil-bridge.jpg" alt="мост дьявола в каньоне">
   <h3 class="third-screen-header">Там есть мост дьявола</h3>
   <p class="third-screen-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 </section>
@@ -65,17 +70,17 @@
 
 <section class="fifth-screen">
   <div class="fifth-screen-container">
-  <img class="fifth-screen-image" src="images/house.svg">
+  <img class="fifth-screen-image" src="images/house.svg" alt="иконка дома">
   <h3 class="fifth-screen-header">Жилье</h3>
   <p class="fifth-screen-description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
 </div>
 <div class="fifth-screen-container">
-  <img class="fifth-screen-image" src="images/burger.png">
+  <img class="fifth-screen-image" src="images/burger.png" alt="иконка бургера">
   <h3 class="fifth-screen-header">Еда</h3>
   <p class="fifth-screen-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
 </div>
 <div class="fifth-screen-container">
-  <img class="fifth-screen-image" src="images/gifts.png">
+  <img class="fifth-screen-image" src="images/gifts.png" alt="иконка подарка">
   <h3 class="fifth-screen-header">Сувениры</h3>
   <p class="fifth-screen-description">Не только китайского, но и настоящего местного производства!</p>
 </div>
@@ -84,12 +89,12 @@
 <section class="sixth-screen">
   <h4 class="sixth-screen-header">Заинтересовались?</h4>
   <p class="sixth-screen-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  <button type="button" label="ПОИСК ГОСТИНИЦЫ В седоне" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</button>
+  <label>="ПОИСК ГОСТИНИЦЫ В седоне"<button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button></label>
 
 </section>
 
 <section class="subscription">
-  <img class="subscription-image" src="images/footer.jpeg">
+  <img class="subscription-image" src="images/footer.jpeg" alt="размытый пейзаж Седоны">
   <h5 class="subscription-header">Подпишитесь на рассылку</h5>
   <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
   <form action="#" method="post">
@@ -101,14 +106,14 @@
 </main>
 <footer class="footer">
   <div class="socials-container">
-  <a class="socials-link" href="vk.com/sedona">
-    <img class="socials-image" src="images/vk.png" alt="vk logo">
+  <a class="socials-link" href="https://vk.com/htmlacademy">
+    <img class="socials-image" src="images/vk.png" alt="vk лого">
   </a>
-  <a class="socials-link" href="tg.com/sedona">
-    <img class="socials-image" src="images/tg.png" alt="telegram logo">
+  <a class="socials-link" href="https://t.me/htmlacademy ">
+    <img class="socials-image" src="images/tg.png" alt="telegram лого">
   </a>
-  <a class="socials-link" href="youtube.com/sedona">
-    <img class="socials-image" src="images/youtube.png" alt="youtube logo">
+  <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
+    <img class="socials-image" src="images/youtube.png" alt="youtube лого">
   </a>
   </div>
   <div class="socials-container">
@@ -116,7 +121,7 @@
   </div>
   <div class="socials-container">
     <a class="social-link" href="html-academy.ru">
-      <img class="html-logo" src="images/html-academy.svg">
+      <img class="html-logo" src="images/html-academy.svg" alt="логотип академии html">
     </a>
   </div>
 </footer>
