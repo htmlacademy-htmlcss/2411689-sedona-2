@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
 <header class="page-header">
-
+<div class="main-nav">
   <nav class="navigation-list">
     <a class="header-logo" href="index.html"><img class="logo" src="images/logo.svg" alt="sedona logo" width="138" height="64"></a>
     <ul class="nav-list">
@@ -27,10 +29,11 @@
     </a>
   </li>
   <li class="nav-item">
-    <button class="button-header" type="button">Хочу сюда</button>
+    <button class="button-header button-want" type="button">Хочу сюда</button>
   </li>
 </ul>
   </div>
+</div>
   </nav>
 
 </header>
@@ -38,70 +41,81 @@
 <main class="main-index">
   <section class="first-page">
 <h1 class="visually-hidden">Седона</h1>
+<div class="image-group">
 <img class="main-image" src="images/index-background.jpg" alt="пейзаж гор">
 <img class="additional-main-image" src="images/sedona-triangle.svg" alt="треуголый дизайн на главном фото Седоны">
 <img class="main-image-overlay" src="images/welcome.svg" alt="надпись 'Добро пожаловать в очаровательную Седону'">
-<p class="first-page-heading">Седона — небольшой городок в Аризоне,
+</div>
+<div class="sedona-description">
+<p class="first-page-heading title-large">Седона — небольшой городок в Аризоне,
 заслуживающий большего!</p>
-<p class="first-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+<p class="first-description text-large">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+</div>
 </section>
 
 <section class="advantages">
-  <h2 class="advantages-header">Настоящий городок</h2>
-  <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+  <div class="advantages-container advantages-container-first">
+  <h2 class="advantages-header title text-white">Настоящий городок</h2>
+  <p class="advantages-description text text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
   <img class="advantages-image" src="images/true-town.jpg" alt="фото городка с постройками и флагами" width="800" height="385">
-  <h2 class="advantages-header">Небольшая площадь</h2>
-  <p class="advantages-description">Все достопримечательности находятся очень близко</p>
-  <h2 class="advantages-header">Красивая дорога</h2>
-  <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-  <h2 class="advantages-header">Мало туристов</h2>
-  <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+</div>
+<div class="advantages-container">
+  <h2 class="advantages-header title">Небольшая площадь</h2>
+  <p class="advantages-description text">Все достопримечательности находятся очень близко</p>
+</div>
+  <div class="advantages-container">
+  <h2 class="advantages-header title">Красивая дорога</h2>
+  <p class="advantages-description text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+</div>
+  <div class="advantages-container">
+  <h2 class="advantages-header title">Мало туристов</h2>
+  <p class="advantages-description text">Большинство едет в Гранд Каньон и толпится там</p>
+</div>
 </section>
 
 <section class="third-screen">
   <img class="third-screen-image" src="images/devil-bridge.jpg" alt="мост дьявола в каньоне" width="800" height="385">
-  <h3 class="third-screen-header">Там есть мост дьявола</h3>
-  <p class="third-screen-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+  <h3 class="third-screen-header title text-white">Там есть мост дьявола</h3>
+  <p class="third-screen-description text text-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 </section>
 
-<section class="forth-screen">
-  <p class="forth-screen-heading">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-  <p class="forth-screen-description">Опытный персонал и качественное обслуживание!</p>
+<section class="forth-screen sedona-description">
+  <p class="forth-screen-heading title-large">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+  <p class="forth-screen-description text-large">Опытный персонал и качественное обслуживание!</p>
 </section>
 
 <section class="fifth-screen">
   <div class="fifth-screen-container">
   <img class="fifth-screen-image" src="images/house.svg" alt="иконка дома" width="75" height="72">
-  <h3 class="fifth-screen-header">Жилье</h3>
-  <p class="fifth-screen-description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+  <h3 class="fifth-screen-header title">Жилье</h3>
+  <p class="fifth-screen-description text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
 </div>
 <div class="fifth-screen-container">
   <img class="fifth-screen-image" src="images/burger.png" alt="иконка бургера" width="75" height="72" >
-  <h3 class="fifth-screen-header">Еда</h3>
-  <p class="fifth-screen-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+  <h3 class="fifth-screen-header title">Еда</h3>
+  <p class="fifth-screen-description text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
 </div>
 <div class="fifth-screen-container">
   <img class="fifth-screen-image" src="images/gifts.png" alt="иконка подарка" width="75" height="72">
-  <h3 class="fifth-screen-header">Сувениры</h3>
-  <p class="fifth-screen-description">Не только китайского, но и настоящего местного производства!</p>
+  <h3 class="fifth-screen-header title">Сувениры</h3>
+  <p class="fifth-screen-description text">Не только китайского, но и настоящего местного производства!</p>
 </div>
 </section>
 
 <section class="sixth-screen">
-  <h4 class="sixth-screen-header">Заинтересовались?</h4>
-  <p class="sixth-screen-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  <label>="ПОИСК ГОСТИНИЦЫ В седоне"<button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button></label>
+  <h4 class="sixth-screen-header title-large">Заинтересовались?</h4>
+  <p class="sixth-screen-description text-large">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  <button type="button button-search">ПОИСК ГОСТИНИЦЫ В седоне</button>
 
 </section>
 
 <section class="subscription">
-  <img class="subscription-image" src="images/footer.jpeg" alt="размытый пейзаж Седоны">
-  <h5 class="subscription-header">Подпишитесь на рассылку</h5>
-  <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-  <form action="#" method="post">
+  <h5 class="subscription-header title-large">Подпишитесь на рассылку</h5>
+  <p class="subscription-description text-large">Только полезная информация и никакого спама, честное бойскаутское!</p>
+  <form class="subscription-form" action="#" method="post">
 
-    <input type="email" id="email" name="email" placeholder="Ваш e-mail">
-    <input type="submit" value="Подписаться">
+    <input class="subscription-form-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+    <input class="submit-button button-blue" type="submit" value="Подписаться">
   </form>
 </section>
 </main>
