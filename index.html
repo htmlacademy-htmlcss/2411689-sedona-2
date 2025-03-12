@@ -7,6 +7,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet">
+      <link rel="stylesheet" href="Javascript.js" type="text/Javascript">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -128,9 +129,76 @@
         <h4 class="sixth-screen-header title-large">Заинтересовались?</h4>
         <p class="sixth-screen-description text-large">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
           предложения гостиниц в Седоне</p>
-          <button class="button subscribe-button button-brown" type="button" >Поиск гостиницы в Седоне</button>
+          <button class="button subscribe-button button-brown button-open-popover" type="button" >Поиск гостиницы в Седоне</button>
 
       </section>
+
+      <div class="popover-container">
+
+				<section class="popover-content">
+
+					<form action="https://echo.htmlacademy.ru/" method="get">
+						<fieldset class="popover-fieldset">
+							<legend class="popover-heading">Поиск гостиницы в Седоне</legend>
+
+							<button class="popover-close-button">
+								<span class="visually-hidden">Закрыть</span>
+							</button>
+
+							<ul class="popover-list">
+
+								<li class="popover-item">
+									<label class="popover-title">Дата заезда:</label>
+									<input class="popover-input-date" type="date" name="check-in-date" id="check-in-date" value="2020-04-27">
+
+								</li>
+
+								<li class="popover-item">
+									<label class="popover-title">Дата выезда:</label>
+									<input class="popover-input-date" type="date" name="check-out-date" id="check-out-date" value="2023-09-01">
+
+								</li>
+
+								<li class="popover-item">
+									<label class="popover-label adults popover-title" for="adults">Взрослые:</label>
+									<form id="adults-number" action="https://echo.htmlacademy.ru/" method="get">
+										<div class="input-number-container">
+											<button class="popover-min-button">
+												<span class="visually-hidden">Уменьшить количество</span>
+											</button>
+											<input class="popover-input-number" type="number" name="adults" id="adults" value="2">
+											<button class="popover-max-button">
+												<span class="visually-hidden">Увеличить количество</span>
+											</button>
+										</div>
+									</form>
+                </li>
+
+								<li class="popover-item">
+									<label class="popover-label popover-title" for="kids">Дети:</label>
+									<form id="kids-number" action="https://echo.htmlacademy.ru/" method="get">
+										<div class="input-number-container">
+											<button class="popover-min-button">
+												<span class="visually-hidden">Уменьшить количество</span>
+											</button>
+											<input class="popover-input-number" type="number" name="kids" id="kids" value="2">
+                      <a  class="hover-info" href="#" title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
+
+											<button class="popover-max-button">
+												<span class="visually-hidden">Увеличить количество</span>
+											</button>
+										</div>
+									</form>
+								</li>
+              </ul>
+            </fieldset>
+            <button class="button popover-send-button">
+							<span class="">Найти</span>
+						</button>
+          </form>
+        </section>
+        </div>
+
 
       <section class="subscription-box subscription" data-test="subscribe">
         <h5 class="subscription-header title-large">Подпишитесь на рассылку</h5>
